@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Menu,MenuService} from '../shared/menu.service';
 
 @Component({
   selector: 'dating-home',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+  menus: Menu[]=[];
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit() {
+    this.menus=this.menuService.getMenus();
   }
 
 }

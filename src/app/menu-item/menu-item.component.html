@@ -1,3 +1,12 @@
-<p>
-  menu-item works!
-</p>
+<div class="thumbnail">
+<img src="http://placehold.it/320x150">
+<div class="caption">
+<h4 class="float-right">{{menu.title }}</h4>
+<h4><a [routerLink]="['/menus', menu.id]">{{menu.title}}</a>
+</h4>
+<p>{{menu.description}}</p>
+</div>
+<!-- <div class="ratings">
+<nga-stars [rating]="product.rating"></nga-stars>
+</div> -->
+</div>

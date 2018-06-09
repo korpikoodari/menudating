@@ -4,5 +4,8 @@
 </div>
 </div>
 <div class="row">
-We'll render several MenuItem components here
+<div *ngFor="let menu of menus"
+class="col-sm-4 col-lg-4 col-md-4">
+<dating-menu-item [menu]="menu"></dating-menu-item>
+</div>
 </div>

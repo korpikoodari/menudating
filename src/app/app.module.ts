@@ -12,7 +12,7 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
-
+import {MenuService} from'./shared/menu.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { StarsComponent } from './stars/stars.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
