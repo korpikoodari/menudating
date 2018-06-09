@@ -7,7 +7,7 @@ const routes: Routes = [
 {
 path: '', component: HomeComponent
 },
-{ path: 'menu', component: MenuDetailComponent}
+{ path: 'menus/:menuId', component: MenuDetailComponent}
 ];
 
 @NgModule({

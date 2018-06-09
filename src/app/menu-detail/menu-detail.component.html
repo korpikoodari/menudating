@@ -1,3 +1,11 @@
-<p>
-  menu-detail works!
-</p>
+<div class="thumbnail">
+<img src="http://placehold.it/820x320">
+<div>
+<h4 class="float-right">{{ menu.location }}</h4>
+<h4>{{ menu.title }}</h4>
+<p>{{ menu.description }}</p>
+</div>
+<div class="ratings">
+<p><dating-stars [rating]="menu.rating"></dating-stars></p>
+</div>
+</div>
